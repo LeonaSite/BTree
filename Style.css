@@ -4,7 +4,6 @@
     box-sizing: border-box;
     letter-spacing: 2px;
     font-family: 'Poppins', sans-serif;
-    color: #B8E4F0;
 }
 
 ::-webkit-scrollbar {
@@ -18,12 +17,10 @@
 }
 
 body {
-  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #ECE3CE;
 }
 
 header {
@@ -114,10 +111,3 @@ li a {
 }
 
 
-.feed img{
-    max-width: 50%;    
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-
-}
