@@ -94,6 +94,11 @@ li a {
     text-decoration: none;
 }
 
+.ads{
+    width: 20%;
+    height: auto;
+}
+
 @media screen and (max-width: 600px) {
 
     header {
