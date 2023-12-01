@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" type="text/css" href="tree.png">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<title>Topic - Precolonial</title>
+	<style type="text/css">
+		body{
+			background-image: url(bgpre.png);
+			justify-content : center;
+			align-items: center;
+			flex-wrap: wrap;
+			min-height: 100vh;
+		}
+
+		h1{
+			font-size: 69px;
+			color: white;
+			justify-content: center;
+			text-align: center;
+			margin-top: 7%;
+			margin-bottom: 15px;
+		}
+
+		.img1{
+			margin-top: 25px;
+			width: 50%; 
+			height: auto;
+		}
+
+		.box{
+			position: relative;
+			width: 80%;
+			height: 1100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: 10%;
+			background: #FFFBF5;
+			border-radius: 10px;
+			margin-top: 10%;
+			margin-bottom: 10px;	
+		}
+
+		/*
+		.box:hover{
+			transform: rotateY(180deg);
+		}
+		*/
+
+
+		.area{
+			margin-top: 50%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			background: #FFFBF5;
+		}
+
+		.box .imgBx {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding : 10px;
+			box-sizing: border- box;
+		}
+
+		.box .imgBx img h2{
+			max-width: 100%;
+			opacity: 0.1;
+			transition: 0.5s;
+		}
+
+		.box:after{
+			content: "";
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			right: -2px;
+			bottom: -2px;
+			background: #B6BBC4;
+			z-index: -2;
+			filter: blur(10px);
+		}
+
+
+		h2 {
+			font-size: 50px;
+			color: #3A4D39;
+			font-weight: 500px;
+			line-height: 20px;
+			letter-spacing: 1px;
+			margin-top: 70px;
+			margin-bottom: 10px;
+		}
+
+		span{
+			font-size : 20px;
+			color: #4F6F52;
+			font-weight: 200px;
+			letter-spacing: 2px;
+			text-align: center;
+			padding: 20px;
+			display: block;
+			margin: 50px;
+			/*display: none;*/
+		}
+
+		@media screen and (max-width: 600px){
+			body{
+				background-image: none;
+				background: #FFFBF5
+			}
+
+			.box:after{
+			display: none;
+			}
+
+			.box{
+				width: 100%;
+				height: auto;
+				margin: 0% 0% 0% 0%;
+			}
+
+			h2{
+				font-size: 30px;
+			}
+
+			span{
+				font-size: 11px;
+				margin: 5px;		
+
+			}
+			.img1{
+				width: 90%;
+				height: autos;
+			}
+
+			p{
+				font-size: 7px;
+				margin: 5px;
+				padding: 20px;
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+        <a href="Main.html" class="name"> <img src="tree.png" class="logo"> BTree</a>
+        <ul>
+            <li><a href="Main.html" >Home</a></li>
+            <li><a href="Topics.html" class="active">Topics▽</a></li>
+            <li><a href="About.html" >About</a></li>  
+        </ul>
+    </header>
+
+    <div class= "box">
+    	<div class="imgBx">
+
+    		<center><h2>Precolonial Era </h2><img src="precol.png" class="img1"></center>
+    		<span>In the era preceding the arrival of the Spaniards, the archipelago was characterized by diverse kingdoms known as barangays, each governed by datus or rajahs who extended protection to their subjects. Within this societal framework, barter emerged as the predominant mode of trade. Taxes, referred to as buwis or handug, took the form of agricultural produce or goods, wherein individuals beneath the datu's rule contributed a portion of their harvest or possessions in return for security and safeguarding.</br></br>
+
+This taxation system was specific to the timawa, the class of free men, as they were the ones obligated to pay taxes. The maharlikas or nobility and the datu, who provided protection, were exempt from direct taxation. Conversely, the oripun or uripon, constituting the slave class, were not expected to contribute since their existence revolved around servitude. This arrangement created a dichotomy wherein the highest and lowest castes were relieved of tax obligations, reflecting the nuanced socio-economic structure of the time.</span>
+
+<p>Reference: https://phlconnect.ched.gov.ph/admin/uploads/da4902cb0bc38210839714ebdcf0efc3/04-Handout-2_2.pdf</p>
+    	</div>
+    </div>
+</body>
+</html>

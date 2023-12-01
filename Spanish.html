@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" type="text/css" href="tree.png">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<title>Topic - Spanish</title>
+	<style type="text/css">
+		body{
+			background-image: url(bgspa.png);
+			justify-content : center;
+			align-items: center;
+			flex-wrap: wrap;
+			min-height: 100vh;
+		}
+
+		h1{
+			font-size: 69px;
+			color: white;
+			justify-content: center;
+			text-align: center;
+			margin-top: 7%;
+			margin-bottom: 15px;
+		}
+
+		.img1{
+			margin-top: 25px;
+			width: 50%; 
+			height: auto;
+		}
+
+		.box{
+			position: relative;
+			width: 80%;
+			height: 1200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: 10%;
+			background: #FFFBF5;
+			border-radius: 10px;
+			margin-top: 10%;
+			margin-bottom: 10px;	
+		}
+
+		/*
+		.box:hover{
+			transform: rotateY(180deg);
+		}
+		*/
+
+
+		.area{
+			margin-top: 50%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			background: #FFFBF5;
+		}
+
+		.box .imgBx {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding : 10px;
+			box-sizing: border- box;
+		}
+
+		.box .imgBx img h2{
+			max-width: 100%;
+			opacity: 0.1;
+			transition: 0.5s;
+		}
+
+		.box:after{
+			content: "";
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			right: -2px;
+			bottom: -2px;
+			background: #B6BBC4;
+			z-index: -2;
+			filter: blur(10px);
+		}
+
+
+		h2 {
+			font-size: 50px;
+			color: #3A4D39;
+			font-weight: 500px;
+			line-height: 20px;
+			letter-spacing: 1px;
+			margin-top: 70px;
+			margin-bottom: 10px;
+		}
+
+		span{
+			font-size : 20px;
+			color: #4F6F52;
+			font-weight: 200px;
+			letter-spacing: 2px;
+			text-align: center;
+			padding: 20px;
+			display: block;
+			margin: 50px;
+			/*display: none;*/
+		}
+
+		@media screen and (max-width: 600px){
+			body{
+				background-image: none;
+				background: #FFFBF5
+			}
+
+			.box:after{
+			display: none;
+			}
+
+			.box{
+				width: 100%;
+				height: auto;
+				margin: 0% 0% 0% 0%;
+			}
+
+			h2{
+				font-size: 30px;
+			}
+
+			span{
+				font-size: 11px;
+				margin: 5px;		
+
+			}
+			.img1{
+				width: 90%;
+				height: autos;
+			}
+
+			p{
+				font-size: 7px;
+				margin: 5px;
+				padding: 20px;
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+        <a href="Main.html" class="name"> <img src="tree.png" class="logo"> BTree</a>
+        <ul>
+            <li><a href="Main.html" >Home</a></li>
+            <li><a href="Topics.html" class="active">Topics▽</a></li>
+            <li><a href="About.html" >About</a></li>  
+        </ul>
+    </header>
+
+    <div class= "box">
+    	<div class="imgBx">
+
+    		<center><h2>Spanish Era  </h2><img src="bgspa.png" class="img1"></center>
+    		<span>In the 17th and 18th centuries, the role of the Contador de Resultas was akin to that of the Commissioner of Internal Revenue, serving as the Chief Royal Accountant and the ultimate authority in financial decisions unless overturned by the Council of Indies. Various taxes were levied on the inhabitants during this period, including an annual tribute or head tax of one gold maiz, taxes on jewelry and gold trinkets, and indirect taxes on items such as tobacco, wine, cockpits, burlas, and powder.
+</br></br>
+From 1521 to 1821, the Spanish treasury had to provide an annual subsidy of P 250,000.00 to the Philippines due to the country's poor financial condition, primarily attributed to an ineffective revenue collection system. The tributo, initially set between 8 to 10 reales, and forced labor, known as polo y servicio, were integral to the taxation network. The cedula replaced the tributo, enabling Spain to monitor individuals liable to pay taxes.
+</br></br>
+Moreover, the encomienda system, granting land ownership to worthy peninsulares, served as another source of tax income from Filipinos. The diezmos prediales mandated 1/10 of the encomienda's produce to be paid to the viceregal government, while the sanctorum represented a tax for the local church. Additional local taxes included the vinta, paid by coastal province residents to defend against Muslim pirates, and the donativo de Zamboanga, specifically taxed for the conquest of Jolo. This diverse array of taxes provides a glimpse into the complex tax landscape endured by Filipinos during the Spanish occupation.</span>
+
+<p>https://phlconnect.ched.gov.ph/admin/uploads/da4902cb0bc38210839714ebdcf0efc3/04-Handout-2_2.pdf</p>
+    	</div>
+    </div>
+</body>
+</html>

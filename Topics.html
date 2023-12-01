@@ -6,37 +6,71 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="shortcut icon" type="text/css" href="tree.png">
 	<link rel="stylesheet" type="text/css" href="Style.css">
-	<title>Topics - BTree</title>
+	<title>About - BTree</title>
 	<style type="text/css">
-
 		body{
-			background-image: url(bgt.jpg);
+			background-image: url(bgTopic.png);
 			justify-content : center;
-			display: flex;
 			align-items: center;
 			flex-wrap: wrap;
 			min-height: 100vh;
 		}
 
+		h1{
+			font-size: 69px;
+			color: white;
+			justify-content: center;
+			text-align: center;
+			margin-top: 7%;
+			margin-bottom: 15px;
+		}
+
 		.img1{
-			width: 350px; 
+			width: 25%; 
 			height: auto;
+			margin-left: -75%;
+
+		}
+
+		.boxt{
+			position: relative;
+			width: 100%;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #FFFBF5;
+			margin-top: 8%;
+			margin-bottom: 10px;
+			padding: 70px;	
 		}
 
 		.box{
 			position: relative;
-			width: 400px;
-			height: 340px;
+			width: 70%;
+			height: 200px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			margin: 30px;
+			margin-left: 15%;
 			background: #FFFBF5;
-			transition: 0.5s;		
+			border-radius: 10px;		
 		}
 
-		.top{
+		/*
+		.box:hover{
+			transform: rotateY(180deg);
+		}
+		*/
+
+
+		.area{
 			margin-top: 50%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			background: #FFFBF5;
 		}
 
 		.box .imgBx {
@@ -55,17 +89,53 @@
 			transition: 0.5s;
 		}
 
-		.box:hover{
-			width: 400px;
-			height: 450px;
+		.box:hover h2{
+			color: white;
 		}
 
-		.box:hover span {
-    		display: block;
+		.box:hover span{
+			color: white;
 		}
+
+		.box1:hover{
+			background-image: url(bgpre.png);
+			border-color: black;
+			border-radius: 20px;
+			border: 2px solid black;
+
+		}
+
+		.box2:hover{
+			background-image: url(bgspa.png);
+			border-color: black;
+			border-radius: 20px;
+			border: 2px solid black;
+
+		}
+
+		.box3:hover{
+			background-image: url(bgt.jpg);
+			border-color: black;
+			border-radius: 20px;
+			border: 2px solid black;
+
+		}
+
+		.box:after{
+			content: "";
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			right: -2px;
+			bottom: -2px;
+			background: #B6BBC4;
+			z-index: -2;
+			filter: blur(10px);
+		}
+
 
 		h2 {
-			font-size: 24px;
+			font-size: 30px;
 			color: #3A4D39;
 			font-weight: 500px;
 			line-height: 20px;
@@ -74,114 +144,114 @@
 		}
 
 		span{
-			font-size : 14px;
+			font-size : 20px;
 			color: #4F6F52;
 			font-weight: 200px;
 			letter-spacing: 2px;
 			text-align: center;
-			padding: 10px;
-			display: none;
+			padding: 15px;
+			display: block;
+			/*display: none;*/
+		}
+
+		.tax{
+			color: #4F6F52;
+			margin-top: 10px;
+		}
+
+		p{
+			
+			color: #B6BBC4;
 		}
 
 		@media screen and (max-width: 600px){
+			h1{
+			font-size: 30px;
+			color: white;
+			justify-content: center;
+			text-align: center;
+			margin-top: 20%;
+			margin-bottom: 15px;
 			
-			.box {
-            margin-top: 250px;
-            margin-bottom: -230px;
-            margin-left: 10px;
-            margin-right: 10px;
-            width: 340px;
-			height: 320px;
-        }
+			}
 
-        		.box:hover{
-			width: 340px;
-			height: 450px;
+			h2{
+				font-size: 16px;
+			}
+
+
+			span{
+				font-size: 10px;
+			}
+
+			.box{
+				width: 80%;
+				height: 250px;
+				margin-left: 10%;
+			}
+
+			.boxt{
+				margin-top: 40%;
+				padding: 4px;
+				height: 300px;
+			}
+			p{
+				font-size: 8px;
+			}
 		}
-
-        .img1{
-			width: 310px; 
-			height: auto;
-		}
-
-        .topphone {
-            margin-top: 10%;
-        }
-        h2{
-        	font-size: 20px;
-        }
 
 	</style>
+	
 </head>
 <body>
 	<header>
         <a href="Main.html" class="name"> <img src="tree.png" class="logo"> BTree</a>
         <ul>
-            <li><a href="Main.html">Home</a></li>
+            <li><a href="Main.html" >Home</a></li>
             <li><a href="Topics.html" class="active">Topics</a></li>
-            <li><a href="About.html">About</a></li>  
+            <li><a href="About.html" >About</a></li>  
         </ul>
     </header>
 
-    <a href=""><div class="box top tophone">
-		<div class="imgBx"><center>
-			<img src="bgt.jpg" class="img1">
-			<h2>On July 4, 1946</center><br><span> when the Philippines gained its independence from the United States, the Bureau was eventually re-established separately.
-	</span></h2>
-		</div>
-	</div></a>
+    <div class="boxt">
+    	<div class="imgBx">
+    		<center><h1 class="tax">What is Taxation </h1></center>
+    		<span>Taxation is a term for when a taxing authority, usually a government, levies or imposes a financial obligation on its citizens or residents. Paying taxes to governments or officials has been a mainstay of civilization since ancient times.Taxation is differentiated from other forms of payment, such as market exchanges, in that taxation does not require consent and is not directly tied to any services rendered. The government compels taxation through an implicit or explicit threat of force. </span>
 
-	<a href="Html.html"><div class="box top">
-		<div class="imgBx"><center>
-			<img src="bgt.jpg" class="img1">
-			<h2>Ferdinan Marcos Admiristration</center><br><span> The appointment of Misael Vera as Commissioner in 1965 led the Bureau to a "new direction" in tax administration. The most notable programs implemented were the "Blue Master Program" and the "Voluntary Tax Compliance Program". </span></h2>
-		</div>
-	</div></a>
+    	</div>
+    </div>
 
-	<a href="Html.html"><div class="box top">
-		<div class="imgBx"><center>
-			<img src="bgt.jpg" class="img1">
-			<h2>Cory Aquino Administration</center><br><span> After the People's Revolution in February 1986, a renewed thrust towards an effective tax administration was pursued by the Bureau. "Operation: Walang Lagay" was launched to promote the efficient and honest collection of taxes.</span></h2>
-		</div>
-	</div></a>
+    <h1>Taxation through ERA</h1>
+    <a href="Precolonial.html">
+    	<div class="box box1">
+    		<div class="imgBx">
+    			<center><h2>Precolonial Era</h2></center>
+    			<span>Since barter was the leading form of trade back then, tax (called buwis or handug, with the variant handog) came in forms of crops or goods, which the people living under the datu share a portion of their harvest or property, in exchange for security and protection.</span>
+    			<center><p>click to view</p></center>
+    		</div>
+    	</div>
+    </a>
 
-	<a href="Html.html"><div class="box top">
-		<div class="imgBx"><center>
-			<img src="bgt.jpg" class="img1">
-			<h2>Ramos Administration</center><br><span> The year 1993 marked the entry into the Bureau of its first lady Commissioner, Liwayway Vinzons-Chato. In order to attain the Bureau's vision of transformation, a comprehensive and integrated program known as the ACTS or Action-Centered Transformation Program.</span></h2>
-		</div>
-	</div></a>
+    <a href="Spanish.html">
+    	<div class="box box2">
+    		<div class="imgBx">
+    			<center><h2>Spanish Era</h2></center>
+    			<span>he tributo, which was originally between 8 to 10 reales. Forced labor, or polo y servicio, was also a network for tax payment. Eventually, with the cedula, Spain replaced tributo with cedula, which allowed them to keep track of the people who could pay taxes.</span>
+    			<center><p>click to view</p></center>
+    		</div>
+    	</div>
+    </a>
 
-	<a href="Html.html"><div class="box">
-		<div class="imgBx"><center>
-			<img src="bgt.jpg" class="img1">
-			<h2>Estrada Administration</center><br><span> With the advent of President Estrada's administration, a Deputy Commissioner of the BIR, Beethoven Rualo, was appointed as Commissioner of Internal Revenue. Under his leadership, priority reform measures were undertaken to enhance voluntary compliance and improve the Bureau's productivity. </span></h2>
-		</div>
-	</div></a>
+    <a href="PostWar.html">
+    	<div class="box box3">
+    		<div class="imgBx">
+    			<center><h2>Post-war to Present</h2></center>
+    			<span>During the early post-war years the establishment of the welfare state, the programme of nationalisation, and 'cold war' defence kept expenditure almost at wartime levels. It took many years for income tax to fall back to lower rates.
 
-	<a href="Html.html"><div class="box">
-		<div class="imgBx"><center>
-			<img src="bgt.jpg" class="img1">
-			<h2>Arroyo Administration</center><br><span> Following the momentous events of EDSA II in January 2001, newly-installed President Gloria Macapagal-Arroyo appointed a former Deputy Commissioner, Atty. René G. Bañez, as the new Commissioner of Internal Revenue. </span></h2>
-		</div>
-	</div></a>
-
-	<a href="Html.html"><div class="box">
-		<div class="imgBx"><center>
-			<img src="bgt.jpg" class="img1">
-			<h2>P-Noy Aquino Administration</center><br><span> Following the highly-acclaimed inauguration of President Benigno C. Aquino III on June 30, 2010, a former BIR Deputy Commissioner, Atty. Kim S. Jacinto-Henares, was appointed as the new Commissioner of Internal Revenue. </span></h2>
-		</div>
-	</div></a>
-
-	<a href="Html.html"><div class="box">
-		<div class="imgBx"><center>
-			<img src="bgt.jpg" class="img1">
-			<h2>Duterte Administration</center><br><span> On December 19, 2017, President Rodrigo Duterte signed the Tax Reform for Acceleration and Inclusion (TRAIN) Law, wherein it exempts all taxpayers, whose annual income is less than or equal to Php 250, 000, to pay their taxes. </span></h2>
-		</div>
-	</div></a>
-
-	<script type="text/javascript">
-
-	</script>
+This gradual fall in the burden of direct taxation was possible through the increasing effectiveness of existing indirect taxes, and by introducing new and more efficient ones.</span>
+<center><p>click to view</p></center>
+    		</div>
+    	</div>
+    </a>
 </body>
 </html>
